@@ -1,0 +1,8 @@
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\bin\Debug\Zegar_Alarm.exe.config
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\bin\Debug\Zegar_Alarm.exe
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\bin\Debug\Zegar_Alarm.pdb
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.Form1.resources
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.Properties.Resources.resources
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.csproj.GenerateResource.Cache
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.exe
+c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.pdb
