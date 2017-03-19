@@ -7,3 +7,12 @@ F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Prop
 F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csproj.GenerateResource.Cache
 F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.exe
 F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.pdb
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.exe.config
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.exe
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.pdb
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.exe
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.pdb
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csprojResolveAssemblyReference.cache
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Form1.resources
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Properties.Resources.resources
+D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csproj.GenerateResource.Cache
