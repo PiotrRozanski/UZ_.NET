@@ -6,3 +6,12 @@ c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj
 c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.csproj.GenerateResource.Cache
 c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.exe
 c:\users\piotr\documents\visual studio 2017\Projects\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.pdb
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\bin\Debug\Zegar_Alarm.exe.config
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\bin\Debug\Zegar_Alarm.exe
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\bin\Debug\Zegar_Alarm.pdb
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.Form1.resources
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.Properties.Resources.resources
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.csproj.GenerateResource.Cache
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.exe
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.pdb
+C:\Users\Piotr\Desktop\El_Pito_and_Elizeusz\Zegar_Alarm\Zegar_Alarm\obj\Debug\Zegar_Alarm.csprojResolveAssemblyReference.cache
