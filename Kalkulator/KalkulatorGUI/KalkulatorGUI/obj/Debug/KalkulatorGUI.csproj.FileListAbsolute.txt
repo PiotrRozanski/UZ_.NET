@@ -1,0 +1,9 @@
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.exe.config
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.exe
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.pdb
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csprojResolveAssemblyReference.cache
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Form1.resources
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Properties.Resources.resources
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csproj.GenerateResource.Cache
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.exe
+F:\Moje nauki skryptowe\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.pdb
