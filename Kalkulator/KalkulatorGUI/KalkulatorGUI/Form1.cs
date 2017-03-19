@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Speech.Synthesis;
 using System.Windows.Forms;
 
 namespace KalkulatorGUI
@@ -151,11 +152,13 @@ namespace KalkulatorGUI
 			isResult = true;
 			_sign = '\0';
 			MessageBoxButtons buttons = MessageBoxButtons.OK;
+			SpeechSynthesizer synth = new SpeechSynthesizer();
+			synth.Speak(score.Text);
 			var message = "Twoj wynik to: " + score.Text;
 			var caption = "Score";
 			MessageBox.Show(message, caption, buttons);
 			
-		
+			
 		}
 
 		private void multipleButton_Click(object sender, EventArgs e)
