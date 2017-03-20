@@ -50,6 +50,8 @@
 			this.button14 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.button15 = new System.Windows.Forms.Button();
+			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -178,6 +180,7 @@
 			this.score.Name = "score";
 			this.score.Size = new System.Drawing.Size(198, 20);
 			this.score.TabIndex = 14;
+			this.score.Text = "0";
 			// 
 			// divideButton
 			// 
@@ -211,7 +214,7 @@
 			// 
 			// button11
 			// 
-			this.button11.Location = new System.Drawing.Point(78, 76);
+			this.button11.Location = new System.Drawing.Point(27, 76);
 			this.button11.Name = "button11";
 			this.button11.Size = new System.Drawing.Size(45, 45);
 			this.button11.TabIndex = 18;
@@ -221,7 +224,7 @@
 			// 
 			// button12
 			// 
-			this.button12.Location = new System.Drawing.Point(27, 76);
+			this.button12.Location = new System.Drawing.Point(27, 280);
 			this.button12.Name = "button12";
 			this.button12.Size = new System.Drawing.Size(45, 45);
 			this.button12.TabIndex = 19;
@@ -241,7 +244,7 @@
 			// 
 			// button14
 			// 
-			this.button14.Location = new System.Drawing.Point(129, 76);
+			this.button14.Location = new System.Drawing.Point(78, 76);
 			this.button14.Name = "button14";
 			this.button14.Size = new System.Drawing.Size(45, 45);
 			this.button14.TabIndex = 21;
@@ -265,11 +268,26 @@
 			this.label2.Size = new System.Drawing.Size(0, 13);
 			this.label2.TabIndex = 23;
 			// 
+			// button15
+			// 
+			this.button15.Location = new System.Drawing.Point(129, 76);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(45, 45);
+			this.button15.TabIndex = 24;
+			this.button15.Text = "%";
+			this.button15.UseVisualStyleBackColor = true;
+			this.button15.Click += new System.EventHandler(this.button15_Click_1);
+			// 
+			// backgroundWorker1
+			// 
+			//this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(253, 337);
+			this.Controls.Add(this.button15);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button14);
@@ -324,6 +342,8 @@
 		private System.Windows.Forms.Button button14;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Button button15;
+		private System.ComponentModel.BackgroundWorker backgroundWorker1;
 	}
 }
 

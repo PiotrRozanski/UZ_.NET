@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Speech.Synthesis;
 using System.Windows.Forms;
 
 namespace KalkulatorGUI
@@ -10,8 +7,8 @@ namespace KalkulatorGUI
 	{
 		private char _sign;
 		private double _variable;
-		private bool isResult;
-		
+		private bool _isResult;
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -19,90 +16,102 @@ namespace KalkulatorGUI
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("1");
+				
 			}
 			
 		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("2");
 			}
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("3");
 			}
 		}
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("4");
 			}
 		}
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("5");
 			}
 		}
 
 		private void button6_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("6");
 			}
 		}
 
 		private void button7_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("7");
 			}
 		}
 
 		private void button8_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("8");
 			}
 		}
 
 		private void button9_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("9");
 			}
 		}
 
 		private void button10_Click(object sender, EventArgs e)
 		{
-			if (!isResult)
+			if (!_isResult)
 			{
+				RemoveZero();
 				score.AppendText("0");
 			}
 		}
 
 		private void button11_Click(object sender, EventArgs e)
 		{
+			
 			_variable = double.Parse(score.Text);
 			_sign = '+';
-			isResult = false;
+			_isResult = false;
 			label2.Text = score.Text;
 			score.Text = "";
 			label1.Text = string.Empty;
@@ -113,7 +122,7 @@ namespace KalkulatorGUI
 		{
 			_variable = double.Parse(score.Text);
 			_sign = '/';
-			isResult = false;
+			_isResult = false;
 			label2.Text = score.Text;
 			score.Text = "";
 			label1.Text = string.Empty;
@@ -128,7 +137,7 @@ namespace KalkulatorGUI
 				return;
 			}
 
-			if (!isResult && !string.IsNullOrEmpty(score.Text) && score.Text.Substring(score.Text.Length - 1) != ",")
+			if (!_isResult && !string.IsNullOrEmpty(score.Text) && score.Text.Substring(score.Text.Length - 1) != ",")
             {
                 score.AppendText(",");
             }
@@ -171,25 +180,32 @@ namespace KalkulatorGUI
 				case '*':
 					score.Text = (_variable*double.Parse(score.Text)).ToString();
 					break;
+					
 			}
 			label2.Text = score.Text;
 			label1.Text = string.Empty;
 			label1.Text = @"=";
-			isResult = true;
+			_isResult = true;
 			_sign = '\0';
+			//Helper helper = new Helper(score);
+			//backgroundWorker1.RunWorkerAsync(helper);
 			MessageBoxButtons buttons = MessageBoxButtons.OK;
-			SpeechSynthesizer synth = new SpeechSynthesizer();
-			synth.Speak(score.Text);
 			var message = "Twoj wynik to: " + score.Text;
 			var caption = "Score";
 			MessageBox.Show(message, caption, buttons);
+			
+		}
+
+		private void BackgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+		{
+
 		}
 
 		private void multipleButton_Click(object sender, EventArgs e)
 		{
 			_variable = double.Parse(score.Text);
 			_sign = '*';
-			isResult = false;
+			_isResult = false;
 			label2.Text = score.Text;
 			score.Text = "";
 			label1.Text = string.Empty;
@@ -199,8 +215,9 @@ namespace KalkulatorGUI
 		private void subtractButton_Click(object sender, EventArgs e)
 		{
 			_variable = double.Parse(score.Text);
+		
 			_sign = '-';
-			isResult = false;
+			_isResult = false;
 			label2.Text = score.Text;
 			score.Text = "";
 			label1.Text = string.Empty;
@@ -209,24 +226,59 @@ namespace KalkulatorGUI
 
 		private void button11_Click_1(object sender, EventArgs e)
 		{
-			score.Text = "";
+			score.Text = "0";
+			label1.Text = string.Empty;
+			label2.Text = string.Empty;
+			_isResult = false;
 		}
 
 		private void button12_Click(object sender, EventArgs e)
 		{
 			var textLength = score.Text.Length;
-			if (textLength > 0 && !isResult)
+			if (textLength > 0 && !_isResult)
 
 				score.Text = score.Text.Substring(0, textLength - 1);
 		}
 
 		private void button14_Click(object sender, EventArgs e)
 		{
-			score.Text = Math.Sqrt(double.Parse(score.Text)).ToString();
-			isResult = true;
+			if (!string.IsNullOrEmpty(score.Text))
+			{
+				score.Text = Math.Sqrt(double.Parse(score.Text)).ToString();
+			}
+			_isResult = true;
 			label2.Text = score.Text;
 			label1.Text = string.Empty;
 			label1.Text = @"√";
+		}
+
+		private void RemoveZero()
+		{
+			if (score.Text.StartsWith("0") && !score.Text.Contains(","))
+			{
+				score.Text = score.Text.Replace("0",string.Empty);
+			}
+		}
+
+		private void button15_Click_1(object sender, EventArgs e)
+		{
+			if (!string.IsNullOrEmpty(score.Text))
+			{
+				double temp = double.Parse(score.Text) * _variable;
+				temp /= 100;
+				score.Text = temp.ToString();
+			}
+			_isResult = false;
+
+			label2.Text = score.Text;
+			label1.Text = string.Empty;
+			label1.Text = @"%";
+			score.Text = "0";
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
