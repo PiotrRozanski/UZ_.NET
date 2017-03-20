@@ -16,3 +16,12 @@ D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug
 D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Form1.resources
 D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Properties.Resources.resources
 D:\Projekty C#\Labki C#\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csproj.GenerateResource.Cache
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.exe.config
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.exe
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\bin\Debug\KalkulatorGUI.pdb
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csprojResolveAssemblyReference.cache
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Form1.resources
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.Properties.Resources.resources
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.csproj.GenerateResource.Cache
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.exe
+E:\34INF-SP\UZ_.NET\Kalkulator\KalkulatorGUI\KalkulatorGUI\obj\Debug\KalkulatorGUI.pdb

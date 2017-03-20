@@ -113,12 +113,19 @@ namespace KalkulatorGUI
 			score.Text = "";
 		}
 
-		private void button15_Click(object sender, EventArgs e)
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            if (!isResult && !String.IsNullOrEmpty(score.Text) && score.Text.Substring(score.Text.Length - 1) != ",")
+            {
+                score.AppendText(",");
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
 		{
 			switch (_sign)
 			{
 				case '+':
-
 					score.Text = (_variable + double.Parse(score.Text)).ToString(CultureInfo.InvariantCulture);
 					break;
 				case '-':
@@ -189,5 +196,5 @@ namespace KalkulatorGUI
 
 				score.Text = score.Text.Substring(0, textLength - 1);
 		}
-	}
+    }
 }
