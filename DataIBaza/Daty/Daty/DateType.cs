@@ -1,1 +1,4 @@
-﻿public enum DateType { Dot, Myslnik,Ukosnik}
+﻿namespace Daty
+{
+	public enum DateType { Kropka, Myslnik,Ukosnik}
+}

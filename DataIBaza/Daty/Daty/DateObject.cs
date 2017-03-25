@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Daty
 {
-	public class MathTimer
+	public class DateObject
 	{
 		public DateType Datetype { get; set; }
 		public string Date1 { get; set; }

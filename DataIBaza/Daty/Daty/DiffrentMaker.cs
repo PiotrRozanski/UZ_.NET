@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Daty
 {
@@ -13,7 +9,26 @@ namespace Daty
 
 		public string SubDate(string beginDate, string endDate, DateType type)
 		{
-			var mathTimer = new MathTimer
+			ParseDate(beginDate, endDate, type);
+			return CountDiffrent(_date1, _date2);
+		}
+
+		private string CountDiffrent(DateTime first, DateTime second)
+		{
+			if (first.Date > second.Date)
+			{
+				var difference12 = first.Date - second.Date;
+				var days = (int) difference12.TotalDays;
+				return days.ToString();
+			}
+
+			var difference21 = second.Subtract(first);
+			return difference21.Days.ToString();
+		}
+
+		private void ParseDate(string beginDate, string endDate, DateType type)
+		{
+			var mathTimer = new DateObject
 			{
 				Date1 = beginDate,
 				Date2 = endDate,
@@ -21,59 +36,21 @@ namespace Daty
 			};
 			switch (mathTimer.Datetype)
 			{
-				case DateType.Dot:
-					try
-					{
-						_date1 = DateTime.ParseExact(mathTimer.Date1, "yyyy.MM.dd", null);
-						_date2 = DateTime.ParseExact(mathTimer.Date2, "yyyy.MM.dd", null);
-					}
-					catch (ArgumentException e)
-					{
-						Console.WriteLine(e);
-						throw;
-					}
-					return CountDiffrent(_date1, _date2);
+				case DateType.Kropka:
+					_date1 = DateTime.ParseExact(mathTimer.Date1, "yyyy.MM.dd", null);
+					_date2 = DateTime.ParseExact(mathTimer.Date2, "yyyy.MM.dd", null);
+					break;
+
 				case DateType.Myslnik:
-					try
-					{
-						_date1 = DateTime.ParseExact(mathTimer.Date1, "yyyy-MM-dd", null);
-						_date2 = DateTime.ParseExact(mathTimer.Date2, "yyyy-MM-dd", null);
-					}
-					catch (ArgumentException e)
-					{
-						Console.WriteLine(e);
-						throw;
-					}
-					return CountDiffrent(_date1, _date2);
+					_date1 = DateTime.ParseExact(mathTimer.Date1, "yyyy-MM-dd", null);
+					_date2 = DateTime.ParseExact(mathTimer.Date2, "yyyy-MM-dd", null);
+					break;
+
 				case DateType.Ukosnik:
-					try
-					{
-						_date1 = DateTime.ParseExact(mathTimer.Date1, "yyyy/MM/dd", null);
-						_date2 = DateTime.ParseExact(mathTimer.Date2, "yyyy/MM/dd", null);
-					}
-					catch (ArgumentException e)
-					{
-						Console.WriteLine(e);
-						throw;
-					}
-					return CountDiffrent(_date1, _date2);
-				default:
-					return string.Empty;
+					_date1 = DateTime.ParseExact(mathTimer.Date1, "yyyy/MM/dd", null);
+					_date2 = DateTime.ParseExact(mathTimer.Date2, "yyyy/MM/dd", null);
+					break;
 			}
 		}
-
-		private string CountDiffrent(DateTime first, DateTime second)
-		{
-			if (first.Date > second.Date)
-			{
-				TimeSpan difference12 = first.Date - second.Date;
-				var days = (int)difference12.TotalDays;
-				return days.ToString();
-			}
-
-			TimeSpan difference21 = second.Subtract(first);
-			return difference21.Days.ToString();
-		}
-	
-}
+	}
 }
