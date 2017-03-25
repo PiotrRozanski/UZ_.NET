@@ -1,0 +1,1 @@
+﻿public enum DateType { Dot, Myslnik,Ukosnik}
