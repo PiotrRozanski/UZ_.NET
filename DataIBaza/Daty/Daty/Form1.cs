@@ -64,7 +64,6 @@ namespace Daty
 		{
 		}
 
-
 		private void Form1_Load(object sender, EventArgs e)
 		{
 		}
@@ -84,6 +83,5 @@ namespace Daty
 		private void textBox3_TextChanged(object sender, EventArgs e)
 		{
 		}
-
 	}
 }
