@@ -9,11 +9,11 @@ namespace MyForeach
 {
     public class MyLoop<T>
     {
-        private static T[] genericArray;
+        private static T[] _genericArray;
 
         public MyLoop(int size)
         {
-            genericArray = new T[size + 1];
+            _genericArray = new T[size + 1];
         }
 
         public MyLoop()
@@ -22,36 +22,29 @@ namespace MyForeach
 
         private static void SetGenericValue(ICollection<T> collection)
         {
-            genericArray = collection.ToArray<T>();
+            _genericArray = collection.ToArray<T>();
         }
 
-        private static void PrintOutArray<T>(T[] array)
+        private static IEnumerable<T> PrintOutArray()
         {
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine(array[i]);
-            }
-        }
-
-        internal static void MyForeach(List<T> myList)
-        {
-            PrintOutArray(myList.ToArray());
+	        IEnumerator iterator = _genericArray.GetEnumerator();
+	        while (iterator.MoveNext())
+	        {
+		        var element = (T) iterator.Current;
+		        //Console.WriteLine(element);
+		        yield return element;
+	        }
         }
 
         public T GetItem(int index)
         {
-            return genericArray[index];
+            return _genericArray[index];
         }
 
-        public static string JoinAsString<T>(T a, T b)
-        {
-            return a.ToString() + b.ToString();
-        }
-
-        //public static void MyForeach(ICollection<T> collection)
-        //{
-        //    SetGenericValue(collection);
-        //    PrintOutArray(genericArray);
-        //}
+       public static void MyForeach(ICollection<T> collection)
+       {
+           SetGenericValue(collection);
+           PrintOutArray();
+       }
     }
 }
