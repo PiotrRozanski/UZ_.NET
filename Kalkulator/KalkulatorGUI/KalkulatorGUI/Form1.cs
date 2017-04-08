@@ -8,6 +8,7 @@ namespace KalkulatorGUI
 		private bool _isResult;
 		private char _sign;
 		private double _variable;
+		private bool _isOperation;
 
 		public Form1()
 		{
@@ -188,17 +189,21 @@ namespace KalkulatorGUI
 			if (_isResult) return;
 			RemoveZero();
 			score.AppendText(sign);
+			_isOperation = true;
 		}
 
 		private void MakeSignAction(char sign)
 		{
-			_variable = double.Parse(score.Text);
-			_sign = sign;
-			_isResult = false;
-			label2.Text = score.Text;
-			score.Text = "";
-			label1.Text = string.Empty;
-			label1.Text = sign.ToString();
+			if (_isOperation)
+			{
+				_variable = double.Parse(score.Text);
+				_sign = sign;
+				_isResult = false;
+				label2.Text = score.Text;
+				score.Text = "";
+				label1.Text = string.Empty;
+				label1.Text = sign.ToString();
+			}
 		}
 
 		private void ShowScore()
