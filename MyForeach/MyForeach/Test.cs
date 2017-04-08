@@ -8,12 +8,17 @@ namespace MyForeach
 {
 	public class Test
 	{
-		private int somethong = 6;
-		public string some { get; set; }
+		private readonly int _something = 6;
+		public string Some { get; set; }
 
 		public char Do()
 		{
 			return 'c';
+		}
+
+		public override string ToString()
+		{
+			return $"{Do()} {_something}";
 		}
 	}
 }
