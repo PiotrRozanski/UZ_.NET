@@ -29,18 +29,21 @@ namespace MyForeach
 		        }
 	        };
 
-			var tests2 = new Identcode[1];
-			tests2[0] = new Identcode();
-
-	        for (int i = 0; i < myList.Count-1; i++)
+	        foreach (var v in MyLoop<string>.MyForeach(myList2))
 	        {
-				//Console.WriteLine(MyLoop<int>.MyForeach(myList);
+		        var result = v.ToList();
+		        for (int i = 0; i < result.Count; i++)
+		        {
+					Console.WriteLine(result[i]);  //tutaj robimy ostatnia operacje na najmniejszej jednostce o indeksie i
+				}
+	        }
 
-			}
-			MyLoop<string>.MyForeach(myList2);
-			MyLoop<Test>.MyForeach(tests);
-			MyLoop<Identcode>.MyForeach(tests2);
-            Console.ReadKey();
+
+			//MyLoop<Test>.MyForeach(tests);
+			//MyLoop<Identcode>.MyForeach(tests2);
+			//var tests2 = new Identcode[1];
+			//tests2[0] = new Identcode();
+			Console.ReadKey();
         }
     }
 }

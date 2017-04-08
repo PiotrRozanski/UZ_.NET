@@ -25,26 +25,20 @@ namespace MyForeach
             _genericArray = collection.ToArray<T>();
         }
 
-        private static IEnumerable<T> PrintOutArray()
+        private static IEnumerable<T>  PrintOutArray()
         {
 	        IEnumerator iterator = _genericArray.GetEnumerator();
 	        while (iterator.MoveNext())
 	        {
 		        var element = (T) iterator.Current;
-		        //Console.WriteLine(element);
 		        yield return element;
 	        }
         }
 
-        public T GetItem(int index)
-        {
-            return _genericArray[index];
-        }
-
-       public static void MyForeach(ICollection<T> collection)
+       public static IEnumerable<IEnumerable<T>> MyForeach(ICollection<T> collection)
        {
-           SetGenericValue(collection);
-           PrintOutArray();
+			SetGenericValue(collection);
+		    yield return PrintOutArray();
        }
     }
 }
