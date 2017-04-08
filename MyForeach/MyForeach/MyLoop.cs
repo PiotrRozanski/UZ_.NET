@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MyForeach
@@ -14,7 +15,7 @@ namespace MyForeach
 
 		private static IEnumerable<T> GetOutArray()
 		{
-			var iterator = _genericArray.GetEnumerator();
+			IEnumerator iterator = _genericArray.GetEnumerator();
 			while (iterator.MoveNext())
 			{
 				var element = (T) iterator.Current;

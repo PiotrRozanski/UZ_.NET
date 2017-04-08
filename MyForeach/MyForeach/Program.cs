@@ -49,9 +49,10 @@ namespace MyForeach
 			items.ToObservable().Subscribe(i =>
 			{
 				var result = i.ToList();
+
 				for (var j = 0; j < result.Count; j++)
 				{
-					Console.WriteLine(result[j]); //tutaj robimy ostatnia operacje na najmniejszej jednostce o indeksie i
+					Console.WriteLine(result[j]);
 				}
 			});
 			Console.ReadKey();
